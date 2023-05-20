@@ -16,7 +16,7 @@ try:
     subprocess.check_call(["pip", "install", lib2])
     from colorama import Fore, Back, Style
     print(f"{Fore.BLUE}~ {Fore.RED}{lib2}{Fore.GREEN} Installed {Fore.RESET}")
-    from pyfiglet import Figlet
+    import pyfiglet
     time.sleep(3)
 except subprocess.CalledProcessError :
     print(f"{lib2} No Installed");
